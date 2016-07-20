@@ -1,1 +1,59 @@
 @import '../shared/common-styles';
+
+#about-me-link {
+  float: left;
+  width: 100%;
+  padding-top: 1%;
+  min-height: 1000px;
+}
+
+#about-me {
+  min-width: 50%;
+  color: #2B252C;
+  font-size: 16px;
+}
+
+#about-me-title {
+  text-align: center;
+  font-size: 50px;
+  padding-bottom: 20px;
+}
+
+#about-me #me {
+  display: flex;
+  justify-content: center;
+  width: 300px;
+  border-radius: 50%;
+  padding: 2px;
+  margin: 0 auto;
+}
+
+#about-me span {
+  display: block;
+  background: $brand-primary;
+  border-radius: 18px;
+  height: 45px;
+  width: 120px;
+  transition: 0.5s;
+  margin-bottom: 10px;
+}
+
+#about-me span:hover {
+  background: $brand-primary;
+}
+
+#talk-link {
+  margin: 0 auto;
+  display: block;
+  width: 100px;
+}
+
+#skills {
+  padding-top: 30px;
+}
+
+#me-big {
+  margin-top: 4%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
