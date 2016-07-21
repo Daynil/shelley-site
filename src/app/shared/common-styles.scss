@@ -81,3 +81,15 @@
     opacity: 1;
   }
 }
+
+
+/***** All *****/
+
+.divider {
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 3px;
+  background-color: $brand-dark;
+  width: 60%;
+}

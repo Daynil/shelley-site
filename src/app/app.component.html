@@ -14,15 +14,16 @@
               </button>
             <a class="navbar-brand" [routerLink]="['/']">
                 <img id="logo" src="http://res.cloudinary.com/dz9rf4hwz/image/upload/v1468784855/botarm_hlprs9.png">
+                <span id="gb">Goldenbot</span> <span id="st">Studios</span>
             </a>
             </div>
 
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
               <ul class="nav navbar-nav navbar-right">
-                <li><a [routerLink]="['/portfolio']">Portfolio</a></li>
-                <li><a [routerLink]="['/about-me']">About</a></li>
-                <li><a [routerLink]="['/contact']">Contact</a></li>
-                <li><a href="">Blog</a></li>
+                <li routerLinkActive="active-tab"><a [routerLink]="['/portfolio']">Portfolio</a></li>
+                <li routerLinkActive="active-tab"><a [routerLink]="['/about-me']">About</a></li>
+                <li routerLinkActive="active-tab"><a [routerLink]="['/contact']">Contact</a></li>
+                <li routerLinkActive="active-tab"><a href="">Blog</a></li>
               </ul>
             </div>
           </div>
