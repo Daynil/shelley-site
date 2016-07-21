@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild, OnInit } from '@angular/core';
 import { ROUTER_DIRECTIVES } from '@angular/router';
+
+import { TransitionService } from '../shared/transition.service';
 
 @Component({
   moduleId: module.id,
@@ -8,10 +10,12 @@ import { ROUTER_DIRECTIVES } from '@angular/router';
   styleUrls: ['about-me.component.css'],
   directives: [ROUTER_DIRECTIVES]
 })
-export class AboutMeComponent {
+export class AboutMeComponent implements OnInit {
 
-  constructor() { }
+  constructor(private transitionService: TransitionService) { }
 
-  ngOnInit() { }
+  ngOnInit() {
+    this.transitionService.transition();
+  }
 
 }

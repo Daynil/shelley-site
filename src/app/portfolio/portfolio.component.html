@@ -1,8 +1,6 @@
-<div id="portfolio-link">
+<div id="portfolio-link" [class.page-transition]="transitionService.isTransitioning()">
     <div class="container portfolio">
-        <h1 id="glow-link"><span class="glow"></span><a id="me-link" href="#about-me-link">I am</a>
-        <span class="glow">a full stack javascript web developer.</span></h1>
-        <p id="subtitle">Here is some of my recent work: </p>
+        <h2 id="subtitle">Recent Work</h2><div class="divider"></div>
         <div class="project-row">
             <div class="card">
                 <a href="#">

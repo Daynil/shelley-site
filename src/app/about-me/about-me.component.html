@@ -1,16 +1,28 @@
-<div id="about-me-link">
+<div id="about-me-link" [class.page-transition]="transitionService.isTransitioning()">
+    <div class="container-fluid">
+        <img class="img-responsive" id="me-big" src="http://res.cloudinary.com/dz9rf4hwz/image/upload/v1469059390/webpicnarrow3_xvepx4.jpg">
+        <div id="name">
+            <h1>Danny Libin</h1>
+            <h3>Full Stack Web Developer</h3>
+        </div>
+    </div>
     <div id="about-me" class="container">
-        <h2 id="about-me-title">I'm Danny Libin - a full stack web application developer.</h2>
+        <div id="name-small">
+            <h3>Danny Libin - Full Stack Web Developer</h3>
+        </div>
         <div class="row">
             <div class="col-md-8">
+                <h3 id="mission">My Mission</h3>
                 <p>
-                    The web has grown into an amazing, globally accessible platform, and I'm fascinated by its
-                    potential. It provides for an incredibly flexible approach towards building applications that are 
-                    used by people and businesses all over the world. </p>
+                    The web has grown into an amazing platform for application development, and I'm fascinated by its
+                    potential. It is uniquely suited for ubiquitous delivery of content and allows for the greatest possible reach
+                    for the modern internet - global audiences and diverse devices. 
+                    It provides for an incredibly flexible approach towards building applications that 
+                    are used by people and businesses all over the world. </p>
                 <p id="skills">
                     Real world applications should be intuitive, clean, fun to use and provide value
                     to everyday users. That's what I strive for in every project I develop. I enjoy learning
-                    new technologies and experimenting with the cutting-edge.
+                    new technologies and experimenting with the cutting-edge in order to provide for the richest possible web experience.
                 </p>
                 <a id="talk-link" class="btn btn-primary" [routerLink]="['/contact']">Let's talk!</a>
             </div>
@@ -18,8 +30,5 @@
                 <img id="me" src="http://res.cloudinary.com/dz9rf4hwz/image/upload/v1468707722/IMG_20151006_123225_3_ifvhtj.jpg">
             </div>
         </div>
-    </div>
-    <div class="container">
-        <img class="img-responsive" id="me-big" src="http://res.cloudinary.com/dz9rf4hwz/image/upload/v1468707725/webpic1_2_mqkkmk.jpg">
     </div>
 </div>

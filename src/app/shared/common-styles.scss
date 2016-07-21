@@ -3,6 +3,7 @@
 @import "bootswatch";
 
 /**** Nav ****/
+
 @media (min-width: 1400px) {
   #nav {
     padding-left: 15%;
@@ -11,6 +12,7 @@
 }
 
 /**** Contact Section ****/
+
 #contact-link {
   position: relative;
   float: left;
@@ -61,5 +63,21 @@
     position: relative;
     line-height: 32px;
     right: 3px;
+  }
+}
+
+/**** Animations ****/
+
+.page-transition {
+  animation-duration: 0.6s;
+  animation-name: fadein;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
