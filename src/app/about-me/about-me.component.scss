@@ -103,3 +103,17 @@
 #philosophy2 {
   padding-top: 10px;
 }
+
+.skillbar {
+  animation-duration: 0.5s;
+  animation-name: skillup;
+}
+
+@keyframes skillup {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
