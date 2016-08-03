@@ -4,12 +4,12 @@
 
 /**** Nav ****/
 
-@media (min-width: 1400px) {
+/*@media (min-width: 1400px) {
   #nav {
     padding-left: 15%;
     padding-right: 15%;
   }
-}
+}*/
 
 /**** Contact Section ****/
 
@@ -20,17 +20,22 @@
   background-color: $brand-dark-bg;
   width: 100%;
   padding-top: 1.5%;
+  button {
+    background-color: $brand-dark;
+    margin-top: 10px;
+  }
 }
 
 #contact-text {
   text-align: center;
-  color: white;
+  color: $white-light;
+  margin-bottom: 40px;
 }
 
-#contact-link p {
+#contact-link {
   text-align: center;
   margin-top: 3%;
-  color: lighten($brand-dark-bg, 35%);
+  color: $gray-fade;
 }
 
 #contact-icons {
@@ -48,6 +53,21 @@
       color: $brand-light !important;
     }
   }
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: $gray-lighter;
+}
+
+#contact-form {
+  text-align: left;
+}
+
+
+#copy {
+  margin-top: 80px;
 }
 
 #back-top {
@@ -89,7 +109,7 @@
   margin: 0 auto;
   margin-top: 20px;
   margin-bottom: 20px;
-  height: 3px;
-  background-color: $brand-dark;
-  width: 60%;
+  height: 1px;
+  background-color: $brand-primary;
+  width: 20%;
 }

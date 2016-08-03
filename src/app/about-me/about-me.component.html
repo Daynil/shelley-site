@@ -1,62 +1,43 @@
-<div id="about-me-link" [class.page-transition]="transitionService.isTransitioning()">
-    <div class="container-fluid">
-        <img class="img-responsive" id="me-big" src="http://res.cloudinary.com/dz9rf4hwz/image/upload/v1469083903/webpicnarrow3-lr_oceb6h.jpg">
-        <div id="name">
-            <h1>Danny Libin</h1>
-            <h3>Full Stack Web Developer</h3>
-        </div>
+<div id="about-me" [class.page-transition]="transitionService.isTransitioning()">
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-md-6 col-xs-12">
+        <img src="http://res.cloudinary.com/dz9rf4hwz/image/upload/v1470258259/shelleyscenic_ichvvf.jpg" class="img-responsive" id="shelley-scenic">
+      </div>
+
+      <div class="col-md-6 col-xs-12 body-text">
+        <p>
+          I am passionate about my work and I love helping people reconnect with themselves. 
+          Healing from trauma and grief is not just about surviving the experience, 
+          it is also about learning to LIVE again. I enjoy being part of this process and 
+          empowering people to grow, change, heal, and thrive! 
+        </p>
+        <p>
+          I believe it is important to get to the root of the problem, not just manage symptoms.
+          One of the gifts I bring to you is listening deeply and helping you feel understood 
+          as we collaborate on implementing practical solutions. 
+        </p>
+      </div>
+      <div class="col-md-12 body-text" id="text2">
+        <p>
+          I graduated with a Masters in Social Work in 2004 from the University of Tennessee 
+          Knoxville. I focused on clinical therapy with a specialization in sexual assault and 
+          abuse survivors. Since then I have worked in various settings: inpatient/outpatient 
+          mental health, veterinary social work, supervising visitation between noncustodial 
+          parents and their children, substance abuse, Alzheimer’s Association, and rape crisis 
+          centers. I am currently a Staff Therapist at Northwest Center Against Sexual Assault 
+          (Northwest CASA) and Services Manager for the CARE Center, Northwest CASA’s McHenry 
+          satellite. While at Northwest CASA, I started an animal assisted therapy program with 
+          my dog, Cassie. To learn more about animal assisted therapy and Cassie click <a>here</a>.
+        </p>
+        <p>
+          If you are interested in setting up an appointment, please contact me. 
+          I would be honored to work with you!
+        </p>
+      </div>
     </div>
-    <div id="about-me" class="container">
-        <div id="name-small">
-            <h3>Danny Libin</h3>
-            <div class="divider"></div>
-            <h4>Full Stack Web Developer</h4>
-        </div>
-        <div class="row">
-            <div class="col-md-8">
-                <h3>Who am I?</h3>
-                <p>I'm a web developer located in sunny (sometimes) Florida. I love tackling interesting, difficult projects to 
-                    expand my experience and expertise in the field. The pace of progress on the web has become extremely rapid, 
-                    and I'm always looking for new ways to make my code faster, simpler and more robust. I've been coding for 
-                    three years and have found a passion in crafting accessible, functional applications.
-                </p>
-                <h3 id="philosophy">Philosophy</h3>
-                <p>
-                    The web has grown into an amazing platform for application development, and I'm fascinated by its
-                    potential. It is uniquely suited for ubiquitous delivery of content and allows for the greatest possible reach
-                    for the modern internet - global audiences and diverse devices. 
-                    It provides for an incredibly flexible approach towards building applications that 
-                    are used by people and businesses all over the world. </p>
-            </div>
-            <div class="col-md-4">
-                <img id="me" src="http://res.cloudinary.com/dz9rf4hwz/image/upload/v1468707722/IMG_20151006_123225_3_ifvhtj.jpg">
-            </div>
-            <div class="col-md-12">
-                <p id="philosophy2">
-                    Real world applications should be intuitive, clean, fun to use and provide value
-                    to everyday users. That's what I strive for in every project I develop. I enjoy learning
-                    new technologies and experimenting with the cutting-edge in order to provide for the richest possible web experience.
-                </p>
-            </div>
-            <div class="col-md-12">
-                <h3 id="skills">Proficiencies</h3>
-            </div>
-            <div class="col-md-6">
-                <div *ngFor="let language of languages">
-                    <div class="name">{{ language.name }}</div>
-                    <div class="progress">
-                        <div class="progress-bar skillbar" [style.width.%]="language.amount"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div *ngFor="let framework of frameworks">
-                    <div class="name">{{ framework.name }}</div>
-                    <div class="progress">
-                        <div class="progress-bar" [style.width.%]="framework.amount"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+
+  </div>
 </div>

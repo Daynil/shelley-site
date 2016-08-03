@@ -14,18 +14,19 @@ $gray-dark:              #212121 !default;
 $gray:                   #666 !default;
 $gray-light:             #bbb !default;
 $gray-lighter:           lighten($gray-base, 93.5%) !default; // #eee
+$gray-fade:              hsl(0, 0%, 64%);
 
-$brand-primary:         #b38600 !default;
+$brand-primary:         hsl(211, 49%, 75%) !default;
 $brand-success:         #4CAF50 !default;
 $brand-info:            #9C27B0 !default;
 $brand-warning:         #ff9800 !default;
 $brand-danger:          #e51c23 !default;
 
-$brand-dark:              darken($brand-primary, 8%);
-$brand-light:             lighten($brand-primary, 8%);
-$brand-accent:           #448aff;
-$brand-dark-bg:          #2B252C;
-$white-light:            hsl(40, 20%, 97%);
+$brand-dark:              hsl(211, 49%, 60%);
+$brand-light:             hsl(211, 49%, 82%);
+$brand-accent:            #448aff;
+$brand-dark-bg:           #2B252C;
+$white-light:             hsl(40, 20%, 97%);
 
 //== Scaffolding
 //
@@ -376,10 +377,10 @@ $navbar-default-border:            transparent !default;
 
 // Navbar links
 $navbar-default-link-color:                $gray !default;
-$navbar-default-link-hover-color:          $gray-dark !default;
+$navbar-default-link-hover-color:          trasparent !default;
 $navbar-default-link-hover-bg:             transparent !default;
-$navbar-default-link-active-color:         $gray-dark !default;
-$navbar-default-link-active-bg:            darken($navbar-default-bg, 6.5%) !default;
+$navbar-default-link-active-color:         transparent !default;
+$navbar-default-link-active-bg:            transparent !default;
 $navbar-default-link-disabled-color:       #ccc !default;
 $navbar-default-link-disabled-bg:          transparent !default;
 
@@ -403,9 +404,9 @@ $navbar-inverse-border:                     transparent !default;
 // Inverted navbar links
 $navbar-inverse-link-color:                 #fff !default;
 $navbar-inverse-link-hover-color:           #fff !default;
-$navbar-inverse-link-hover-bg:              lighten($brand-primary, 3%) !default;
-$navbar-inverse-link-active-color:          $navbar-inverse-link-hover-color !default;
-$navbar-inverse-link-active-bg:             darken($navbar-inverse-bg, 10%) !default;
+$navbar-inverse-link-hover-bg:              transparent !default;
+$navbar-inverse-link-active-color:          transparent !default;
+$navbar-inverse-link-active-bg:             transparent !default;
 $navbar-inverse-link-disabled-color:        #444 !default;
 $navbar-inverse-link-disabled-bg:           transparent !default;
 

@@ -1,19 +1,30 @@
 @import './shared/common-styles';
 
 .page-wrapper {
-  font-family: 'Roboto';
+  font-family: 'Exo 2', sans-serif;
 }
 
 #nav {
   z-index: 1;
   border-bottom: 0px solid transparent;
-  transition: 0.5s;
-  .active-tab {
-    border-bottom: 4px solid $white-light;
-    height: 64px;
-  }
-  a:active, a:focus {
-    background-color: transparent;
+  transition: all 0.5s ease;
+  .nav-links {
+    margin-top: 10px;
+    .active-tab {
+      border: 2px solid $white-light;
+    }
+    a {
+      margin-left: 5px;
+      margin-right: 5px;
+      border: 2px solid transparent;
+      padding: 8px 12px;
+    }
+    a:hover {
+      border: 2px solid $white-light;
+    }
+    a:active, a:focus {
+      background-color: transparent;
+    }
   }
 }
 
@@ -26,18 +37,8 @@
   left: 5px;
 }
 
-
-#gb, #st {
-  font-family: 'Alegreya Sans';
+#logo-text {
   position: relative;
-  bottom: 9px;
+  bottom: 6px;
   left: 5px;
-  font-size: 23px;
-  @media (max-width: 330px) {
-    font-size: 21px;
-  }
-}
-
-#st {
-  font-weight: 300;
 }

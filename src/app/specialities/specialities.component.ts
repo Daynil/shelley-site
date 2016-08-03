@@ -5,12 +5,12 @@ import { TransitionService } from '../shared/transition.service';
 
 @Component({
   moduleId: module.id,
-  selector: 'portfolio',
-  templateUrl: 'portfolio.component.html',
-  styleUrls: ['portfolio.component.css'],
+  selector: 'specialities',
+  templateUrl: 'specialities.component.html',
+  styleUrls: ['specialities.component.css'],
   directives: [ROUTER_DIRECTIVES]
 })
-export class PortfolioComponent implements OnInit {
+export class SpecialitiesComponent implements OnInit {
 
   constructor(private transitionService: TransitionService) { }
 
