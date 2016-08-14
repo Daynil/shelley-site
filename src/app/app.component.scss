@@ -4,6 +4,8 @@
   font-family: 'Exo 2', sans-serif;
 }
 
+/** Navbar */
+
 #nav {
   z-index: 1;
   border-bottom: 0px solid transparent;
@@ -25,6 +27,12 @@
     a:active, a:focus {
       background-color: transparent;
     }
+  }
+}
+
+@media (min-width: 979px) {
+  ul.nav li.dropdown:hover > ul.dropdown-menu {
+    display: block;
   }
 }
 
