@@ -26,17 +26,17 @@
                 <li class="dropdown">
                   <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Specialities<span class="caret"></span></a>
                   <ul class="dropdown-menu" role="menu">
-                    <li><a href="#">Trauma/PTSD</a></li>
-                    <li><a href="#">Grief</a></li>
-                    <li><a href="#">Other Issues</a></li>
-                    <li><a href="#">Animal Assisted Therapy</a></li>
-                    <li><a href="#">Art Therapy</a></li>
-                    <li><a href="#">Sandtray Therapy</a></li>
-                    <li><a href="#">Mindfulness</a></li>
+                    <li><a [routerLink]="['/trauma']">Trauma/PTSD</a></li>
+                    <li><a [routerLink]="['/grief']">Grief</a></li>
+                    <li><a [routerLink]="['/other-issues']">Other Issues</a></li>
+                    <li><a [routerLink]="['/animal-assisted-therapy']">Animal Assisted Therapy</a></li>
+                    <li><a [routerLink]="['/art-therapy']">Art Therapy</a></li>
+                    <li><a [routerLink]="['/sandtray-therapy']">Sandtray Therapy</a></li>
+                    <li><a [routerLink]="['/mindfulness']">Mindfulness</a></li>
                   </ul>
                 </li>
                 <li><a routerLinkActive="active-tab" [routerLink]="['/contact']">Contact</a></li>
-                <li><a routerLinkActive="active-tab" href="#">Blog</a></li>
+                <li><a routerLinkActive="active-tab" [routerLink]="['/blog']">Blog</a></li>
               </ul>
             </div>
           </div>

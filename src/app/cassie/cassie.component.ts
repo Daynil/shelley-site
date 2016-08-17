@@ -4,11 +4,11 @@ import { TransitionService } from '../shared/transition.service';
 
 @Component({
   moduleId: module.id,
-  selector: 'home',
-  templateUrl: 'home.component.html',
-  styleUrls: ['home.component.css']
+  selector: 'cassie',
+  templateUrl: 'cassie.component.html',
+  styleUrls: ['cassie.component.css']
 })
-export class HomeComponent implements OnInit {
+export class CassieComponent implements OnInit {
 
   constructor(private transitionService: TransitionService) { }
 
