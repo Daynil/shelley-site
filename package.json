@@ -1,5 +1,5 @@
 {
-  "name": "portfolio-app",
+  "name": "shelley-site",
   "version": "1.0.0",
   "scripts": {
     "start": "gulp serve",
