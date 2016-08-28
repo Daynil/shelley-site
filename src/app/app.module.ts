@@ -1,5 +1,6 @@
 import { NgModule }       from '@angular/core';
 import { BrowserModule  } from '@angular/platform-browser';
+import { HTTP_PROVIDERS } from '@angular/http';
 import { routing, appRoutingProviders } from './app.routing';
 
 import { AppComponent }   from './app.component';
@@ -20,14 +21,16 @@ import { OtherIssuesComponent } from './specialities/other-issues/other-issues.c
 import { SandtrayComponent } from './specialities/sandtray/sandtray.component';
 import { TraumaComponent } from './specialities/trauma/trauma.component';
 
+import { MailService } from './shared/mail.service';
 import { TransitionService } from './shared/transition.service';
+import { ToastComponent } from './shared/toast.component';
 
 @NgModule({
   declarations: [ AppComponent, HomeComponent, AboutMeComponent, FormsComponent,
                   OtherServicesComponent, ContactComponent, AnimalComponent, ArtComponent,
                   GriefComponent, MindfulnessComponent, OtherIssuesComponent, SandtrayComponent,
-                  TraumaComponent, CassieComponent, BlogComponent ],
-  providers:    [ appRoutingProviders, TransitionService ],
+                  TraumaComponent, CassieComponent, BlogComponent, ToastComponent ],
+  providers:    [ appRoutingProviders, HTTP_PROVIDERS, TransitionService, MailService ],
   imports:      [ BrowserModule, routing ],
   bootstrap:    [ AppComponent ]
 })
