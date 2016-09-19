@@ -1,6 +1,6 @@
 import { NgModule }       from '@angular/core';
 import { BrowserModule  } from '@angular/platform-browser';
-import { HTTP_PROVIDERS } from '@angular/http';
+import { HttpModule } from '@angular/http';
 import { routing, appRoutingProviders } from './app.routing';
 
 import { AppComponent }   from './app.component';
@@ -30,8 +30,8 @@ import { ToastComponent } from './shared/toast.component';
                   OtherServicesComponent, ContactComponent, AnimalComponent, ArtComponent,
                   GriefComponent, MindfulnessComponent, OtherIssuesComponent, SandtrayComponent,
                   TraumaComponent, CassieComponent, BlogComponent, ToastComponent ],
-  providers:    [ appRoutingProviders, HTTP_PROVIDERS, TransitionService, MailService ],
-  imports:      [ BrowserModule, routing ],
+  providers:    [ appRoutingProviders, TransitionService, MailService ],
+  imports:      [ BrowserModule, HttpModule, routing ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }

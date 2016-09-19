@@ -13,14 +13,13 @@
     "node": "4.3.1"
   },
   "dependencies": {
-    "@angular/common": "^2.0.0-rc.5",
-    "@angular/compiler": "2.0.0-rc.5",
-    "@angular/core": "2.0.0-rc.5",
-    "@angular/http": "2.0.0-rc.5",
-    "@angular/platform-browser": "2.0.0-rc.5",
-    "@angular/platform-browser-dynamic": "2.0.0-rc.5",
-    "@angular/router": "^3.0.0-rc.1",
-    "@angular/upgrade": "2.0.0-rc.5",
+    "@angular/common": "2.0.0",
+    "@angular/compiler": "2.0.0",
+    "@angular/core": "2.0.0",
+    "@angular/http": "2.0.0",
+    "@angular/platform-browser": "2.0.0",
+    "@angular/platform-browser-dynamic": "2.0.0",
+    "@angular/router": "3.0.0",
     "angular2-in-memory-web-api": "0.0.5",
     "body-parser": "^1.15.0",
     "bootstrap-sass": "^3.3.6",
@@ -38,9 +37,9 @@
     "mongoose": "^4.4.14",
     "morgan": "^1.7.0",
     "reflect-metadata": "0.1.2",
-    "rxjs": "5.0.0-beta.6",
+    "rxjs": "5.0.0-beta.12",
     "systemjs": "0.19.31",
-    "zone.js": "0.6.12"
+    "zone.js": "0.6.23"
   },
   "devDependencies": {
     "dotenv": "^2.0.0",
